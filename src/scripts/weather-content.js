@@ -3,7 +3,7 @@ import CurrentUnit from './weather-unit';
 
 async function getWeatherIcon(weatherInfo) {
   const iconCode = weatherInfo.weather[0].icon;
-  const urlIcon = `http://openweathermap.org/img/wn/${iconCode}@2x.png`;
+  const urlIcon = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
   const response = await fetch(urlIcon);
   if (response.ok) {
     return urlIcon;
