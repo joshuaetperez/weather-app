@@ -7,11 +7,20 @@
     <title>Weather App</title>
   </head>
   <body>
-    <form id="form">
-      <label for="form-location">City: </label>
-      <input type="text" name="form-location" id="form-location" />
-      <input type="submit" value="Submit" id="form-submit" />
-    </form>
+    <div class="form-container">
+      <form id="form">
+        <input
+          type="text"
+          name="form-location"
+          id="form-location"
+          placeholder="Enter city name"
+        />
+        <input type="submit" value="Submit" id="form-submit" />
+        <button id="change-unit-btn" />&#x2103;</button>
+      </form>
+    </div>
+    <div class="error-div"></div>
+    <div class="weather-container"></div>
     <script src="./main.js"></script>
   </body>
 </html>
